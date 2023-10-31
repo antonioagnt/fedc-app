@@ -12,6 +12,7 @@ function FormProto() {
     <>
       <form onSubmit={handleSubmit}>
         <fieldset>
+          <h2>Form Proto</h2>
           <div className='Field'>
             <label>Name:</label>
             <input
