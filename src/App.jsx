@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import CallToAction from './components/CallToAction';
-import React, { useEffect, useState, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Specials from './components/Specials';
@@ -11,41 +11,50 @@ import BookingPage from './components/BookingPage';
 import FormProto from './components/FormProto';
 import FormProto2 from './components/FormProto2';
 import FormReducert from './components/FormReducert';
+import SelectReducer from './components/SelectReducer';
 
+const updateDates = (state, action) => {
+  switch (action.type) {
+    case 'change_value':
+      return {
+        ...state,
+        selectedDate: action.payload,
+      };
+    case 'on_submit':
+      alert(`selected date: ${state.selectedDate}`);
+      return state;
+    default:
+      return state;
+  }
+};
 function App() {
-  const [selectedDate, setSelectedDate] = useState('morning');
-  const DateOptionsList = ['dia', 'afternoon', 'evening'];
-
-  const handleDateChange = (e) => {
-    setSelectedDate(e.target.value);
+  const handleSelectChange = (e) => {
+    dispatch({ type: 'change_value', payload: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmitRedux = (e) => {
     e.preventDefault();
-    console.log('Selected Date:', selectedDate);
+    dispatch({ type: 'on_submit' });
   };
-
-  const updateDates = (state, action) => {
-    return state;
+  const initialState = {
+    selectedDate: 'manana',
+    dateOptions: ['manana', 'tardia', 'evening'],
   };
-
-  const initializeDates = () => {
-    return DateOptionsList;
-  };
-  const [availableDates, dispatch] = useReducer(updateDates, initializeDates());
+  const [state, dispatch] = useReducer(updateDates, initialState);
 
   return (
     <>
       <Header />
       <Nav />
+      <SelectReducer />
       <CallToAction />
       <FormReducert />
       <FormProto />
       <FormProto2
-        selectedDate={selectedDate}
-        handleDateChange={handleDateChange}
-        handleSubmit={handleSubmit}
-        dateOptions={DateOptionsList}
+        selectedDate={state.selectedDate}
+        handleDateChange={handleSelectChange}
+        handleSubmit={handleSubmitRedux}
+        dateOptions={state.dateOptions}
       />
       <Routes>
         <Route path='/' element={<Homepage />} />
