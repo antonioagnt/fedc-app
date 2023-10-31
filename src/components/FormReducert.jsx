@@ -11,6 +11,7 @@ export default function FormReducert() {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div>
+      <h1>Wallet</h1>
       <h1>Wallet: {state.money}</h1>
       <button onClick={() => dispatch({ type: 'buy_ingredients' })}>
         Shooping for veggies!

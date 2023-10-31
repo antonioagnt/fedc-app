@@ -44,18 +44,17 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Nav />
-      <SelectReducer />
-      <CallToAction />
-      <FormReducert />
+      {/* <SelectReducer /> */}
+      {/* <FormReducert />
       <FormProto />
       <FormProto2
         selectedDate={state.selectedDate}
         handleDateChange={handleSelectChange}
         handleSubmit={handleSubmitRedux}
         dateOptions={state.dateOptions}
-      />
+      /> */}
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/Specials' element={<Specials />} />
