@@ -28,7 +28,7 @@ export default function Nav() {
           </li>
           <li>
             <Link to='/' className='nav-item'>
-              Reservation
+              Order Online
             </Link>
           </li>
           <li>

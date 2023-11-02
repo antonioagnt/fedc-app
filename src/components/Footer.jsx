@@ -1,6 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../img/Logo.svg';
+import instaLogo from '../img/instagram.svg';
+import twitterLogo from '../img/twitter-x.svg';
+import faceLogo from '../img/facebook.svg';
+import Nav from './Nav';
 
 export default function Footer() {
   return (
@@ -9,40 +12,8 @@ export default function Footer() {
         <div>
           <img src={logo}></img>
         </div>
-        <div>
-          <ul>
-            <h4>Dormant Navigation</h4>
-            <li>
-              <Link to='/' className='nav-item'>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to='/' className='nav-item'>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to='/' className='nav-item'>
-                Menu
-              </Link>
-            </li>
-            <li>
-              <Link to='/BookingPage' className='nav-item'>
-                Reservations
-              </Link>
-            </li>
-            <li>
-              <Link to='/' className='nav-item'>
-                Reservation
-              </Link>
-            </li>
-            <li>
-              <Link to='/' className='nav-item'>
-                Login
-              </Link>
-            </li>
-          </ul>
+        <div className='nav-link-footer'>
+          <Nav />
         </div>
         <div>
           <ul>
@@ -55,8 +26,15 @@ export default function Footer() {
         <div>
           <ul>
             <h4>Social Media Links</h4>
-            <li>Instagram</li>
-            <li>Facebbook</li>
+            <li>
+              <img src={instaLogo}></img>
+            </li>
+            <li>
+              <img src={twitterLogo}></img>
+            </li>
+            <li>
+              <img src={faceLogo}></img>
+            </li>
           </ul>
         </div>
       </footer>

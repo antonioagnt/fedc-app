@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 body {
   margin-top: 3rem;
   margin-bottom: 3rem;
   margin-left: 5%;
   margin-right: 5%;
-  font-family: 'Poppins';
-  background-color: green;
+  background-color: white;
 }
 li {
   text-decoration: none;
 }
 
 a {
-  color: white;
+  color: #495e57;
   text-decoration: none;
 }
 a:hover {
@@ -29,12 +28,16 @@ h1 {
   font-size: 3rem;
   margin-left: 5%;
   margin-right: 5%;
+  font-family: 'Markazi Text', serif;
+  font-style: normal;
 }
 h2 {
   font-size: 1.8rem;
   margin-left: 3%;
 }
-
+h3 {
+  font-family: 'Markazi Text', serif;
+}
 header > img {
   display: flex;
   margin-left: auto;
@@ -79,7 +82,7 @@ footer div {
   flex: 1;
 }
 
-.special-container{
+.special-container {
   max-width: '1100px';
   margin: '0 auto';
   display: flex;
@@ -89,8 +92,6 @@ footer div {
   max-width: 400px;
   display: flex;
 }
-
-
 
 .container-headder {
   display: flex;
@@ -102,4 +103,17 @@ footer div {
 .nav-bar {
   flex: 1;
   margin-left: 100px;
+}
+.button {
+  margin: 10px 20px;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #f4ce14;
+  color: #495e57;
+  font-weight: 700;
 }

@@ -1,14 +1,20 @@
-.call-to-Action{
-    display: flex;
+.call-to-Action {
+  display: flex;
+  background-color: #495e57;
 }
 
-.call-left-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
+.call-left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.call-left-box > h3{
-    display: flex;
-    margin-left: 6%;
+.call-left-box > h3 {
+  display: flex;
+  margin-left: 6%;
+}
+
+.button-call {
+  width: 220px;
+  height: 50px;
 }
