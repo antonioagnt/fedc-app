@@ -1,0 +1,29 @@
+.card-specials{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 250px;
+    margin: 10px;
+
+}
+.img-card{
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    width: 100%;
+
+}
+.card-top-text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 10px;
+}
+.card-bottom-text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}

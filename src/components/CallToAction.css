@@ -1,0 +1,14 @@
+.call-to-Action{
+    display: flex;
+}
+
+.call-left-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.call-left-box > h3{
+    display: flex;
+    margin-left: 6%;
+}

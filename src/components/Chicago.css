@@ -1,12 +1,26 @@
 .chicagobox {
-  background-color: red;
+  display: flex;
+  background-color: gray;
 }
 
 .chicagoImg {
-  background-color: green;
-  align-items: right;
+  display: flex;
+
 }
 
-.Lefttext {
-  background-color: blue;
+.lefttext > p {
+  padding-top: 30px;
+  margin-left: 3%;
+}
+.lefttext > h2 {
+  display: flex;
+  padding: 0px;
+}
+
+.lefttext > h3 {
+  display: flex;
+  margin-left: 3%;
+}
+.chicagoImg {
+  width: 400px;
 }

@@ -1,0 +1,18 @@
+.special-container{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+}
+.special-card-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 20px;
+}
+.special-header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

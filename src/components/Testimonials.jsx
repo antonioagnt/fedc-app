@@ -3,8 +3,10 @@ import TestimonialCard from './TestimonialCard';
 
 export default function Testimonials() {
   return (
-    <>
+    <section>
       <TestimonialCard />
-    </>
+      <TestimonialCard />
+      <TestimonialCard />
+    </section>
   );
 }

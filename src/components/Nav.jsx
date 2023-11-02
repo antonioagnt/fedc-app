@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../img/Logo.svg';
 export default function Nav() {
   return (
     <>
       <nav>
         <ul>
-          <li>
-            <img src={logo}></img>
-          </li>
           <li>
             <Link to='/' className='nav-item'>
               Home
