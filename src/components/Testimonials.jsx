@@ -7,6 +7,7 @@ export default function Testimonials() {
       <TestimonialCard />
       <TestimonialCard />
       <TestimonialCard />
+      <TestimonialCard />
     </section>
   );
 }

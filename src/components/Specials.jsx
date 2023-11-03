@@ -2,10 +2,6 @@ import React from 'react';
 import SpecialCards from './SpecialCards';
 import './Specials.css';
 
-let url = './img/brus.png';
-let url2 = './img/greek-salad.png';
-let url3 = './img/gril-fish.png';
-
 const intensToRender = [
   {
     name: 'brus',

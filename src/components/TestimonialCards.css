@@ -1,0 +1,24 @@
+.card-testimonial {
+  display: flex;
+  max-width: 350px;
+  background-color: aqua;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.img-testimonial {
+  width: 10%;
+  display: flex;
+}
+
+.starbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.starbox > img {
+  width: 25px;
+}
+.photo-names {
+  display: flex;
+}
