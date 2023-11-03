@@ -2,7 +2,7 @@ import React from 'react';
 import SpecialCards from './SpecialCards';
 import './Specials.css';
 
-const intensToRender = [
+const foodsToRender = [
   {
     name: 'brus',
     key: '0001',
@@ -34,9 +34,9 @@ export default function Specials() {
       </div>
 
       <div className='special-card-holder'>
-        <SpecialCards {...intensToRender[0]} />
-        <SpecialCards {...intensToRender[1]} />
-        <SpecialCards {...intensToRender[2]} />
+        <SpecialCards {...foodsToRender[0]} />
+        <SpecialCards {...foodsToRender[1]} />
+        <SpecialCards {...foodsToRender[2]} />
       </div>
     </div>
   );

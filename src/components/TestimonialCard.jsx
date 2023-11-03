@@ -1,6 +1,7 @@
 import React from 'react';
 import './TestimonialCards.css';
-export default function TestimonialCard() {
+
+export default function TestimonialCard(props) {
   return (
     <section className='card-testimonial'>
       <div className='starbox'>
@@ -11,17 +12,13 @@ export default function TestimonialCard() {
         <img src='./img/icons/star.png' alt='' />
       </div>
       <div className='photo-names'>
-        <img
-          className='img-testimonial'
-          alt='user'
-          src='./img/referals/avatar1.png'
-        />
+        <img className='img-testimonial' alt='user' src={props.imgUrl} />
         <div className='name-nick'>
-          <h3>Name</h3>
-          <p>nick</p>
+          <h3>{props.name}</h3>
+          <p>{props.nick}</p>
         </div>
       </div>
-      <div>lore ipsum solo dolum itsu</div>
+      <p>{props.review}</p>
     </section>
   );
 }
