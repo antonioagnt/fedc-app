@@ -12,10 +12,12 @@ export default function SpecialCards(props) {
           <p>{props.price}</p>
         </div>
 
-        <p>Flavor teeeext lorem ipsu dolem comida bblah bblash blash</p>
+        <p>{props.text}</p>
         <div className='card-bottom-text'>
-          <p>Order</p>
-          <button>Bike</button>
+          <h4>Order a delivery</h4>
+          <button className='order-delivery'>
+            <img src='./img/icons/mopped-icon.png' alt='mopped'></img>
+          </button>
         </div>
       </div>
     </>

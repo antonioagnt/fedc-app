@@ -14,7 +14,10 @@
 .testimonial-cards {
   display: flex;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  align-self: center;
+  column-gap: 20px;
+  justify-content: space-between;
 }
 .testimonial-cards:last-child {
   margin-right: 10px;

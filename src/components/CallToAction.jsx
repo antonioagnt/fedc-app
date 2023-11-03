@@ -1,6 +1,5 @@
 import React from 'react';
 import './CallToAction.css';
-import headerImg from '../img/header-img.png';
 export default function CallToAction() {
   return (
     <section className='call-to-Action'>
@@ -19,7 +18,11 @@ export default function CallToAction() {
         </p>
         <button className='button-call button'>Book A table</button>
       </div>
-      <img alt='foto-call' src={headerImg} className='foto-call'></img>
+      <img
+        alt='foto-call'
+        src='./img/call-to-action-b.jpg'
+        className='foto-call'
+      ></img>
     </section>
   );
 }

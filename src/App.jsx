@@ -4,7 +4,6 @@ import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Specials from './components/Specials';
-import FormProto2 from './components/FormProto2';
 import ConfirmationPage from './components/ConfirmationPage';
 import BookingPage from './components/BookingPage';
 

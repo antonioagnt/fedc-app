@@ -18,15 +18,15 @@
 }
 .lefttext > h2 {
   display: flex;
-  padding: 0px;
+  margin-top: -10px;
 }
 
-.lefttext > h3 {
+.lefttext > h1 {
   display: flex;
   margin-left: 3%;
 }
 .chicagoImg {
   min-width: 250px;
-  max-width: 600px;
-  width: 40%;
+  max-width: 550px;
+  width: 35%;
 }

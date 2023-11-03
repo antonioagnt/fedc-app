@@ -4,32 +4,32 @@ import './Specials.css';
 
 const foodsToRender = [
   {
-    name: 'brus',
+    name: 'Greek Salad',
     key: '0001',
-    imgUrl: './img/brus.png',
-    price: '12.99',
-    text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,',
+    imgUrl: './img/specials-img/greek-salad-b.jpg',
+    price: '$ 12.99',
+    text: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.',
   },
   {
-    name: 'brus2',
+    name: 'Bruchetta',
     key: '0002',
-    imgUrl: './img/greek-salad.png',
-    price: '12.99',
-    text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,',
+    imgUrl: './img/specials-img/bruchetta-b.jpg',
+    price: '$ 5.99',
+    text: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.',
   },
   {
-    name: 'brus3',
+    name: 'Lemon Dessert',
     key: '0003',
-    imgUrl: './img/gril-fish.png',
-    price: '12.99',
-    text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,',
+    imgUrl: './img/specials-img/lemon-dessert-b.jpg',
+    price: '$ 5.00',
+    text: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined. ",
   },
 ];
 export default function Specials() {
   return (
     <div className='special-container'>
       <div className='special-header'>
-        <h1>Specials</h1>
+        <h1>This weeks specials!</h1>
         <button className='button button-specials'>Online Menu</button>
       </div>
 

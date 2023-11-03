@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   width: 90%;
-  max-width: 250px;
+  max-width: 350px;
   margin: 10px;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 20px 20px 0 0;
+  justify-content: space-between;
 }
 .img-card {
   border-radius: 20px 20px 0 0;
@@ -20,9 +23,21 @@
   margin-left: 10px;
 }
 .card-bottom-text {
+  margin-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+}
+.order-delivery {
+  margin-left: 10px;
+  border: none;
+  display: flex;
+}
+.order-delivery img {
+  margin-left: 10px;
+  width: 24px;
+}
+.card-top-text p {
+  color: #ee9972;
 }

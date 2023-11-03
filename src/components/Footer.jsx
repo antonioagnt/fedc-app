@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../img/Logo.svg';
 import instaLogo from '../img/instagram.svg';
 import twitterLogo from '../img/twitter-x.svg';
 import faceLogo from '../img/facebook.svg';
@@ -12,32 +11,46 @@ export default function Footer() {
     <>
       <footer className='footer'>
         <div>
-          <img src={logo}></img>
+          <img src='./img/icons/lemon-square-icon.png' alt='logo'></img>
         </div>
-        <div className='nav-link-footer'>
-          <Nav />
-        </div>
-        <div>
-          <ul>
-            <h4>Contact</h4>
-            <li>Adress</li>
-            <li>Phone Number</li>
-            <li>Telephone</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
+        <div className='footer-links'>
+          <div className='nav-link-footer'>
+            <h4>Navigation</h4>
+            <Nav />
+          </div>
+          <div className='contact'>
+            <ul>
+              <h4>Contact</h4>
+              <h4>Adress</h4>
+              <p>california, best street, best number</p>
+              <h4>Phone Number</h4>
+              <p>12-1231-123124</p>
+              <h4>Email</h4>
+              <p>
+                <a href='mailto: lemon@email.com'>lemon@email.com</a>
+              </p>
+            </ul>
+          </div>
+          <div className='social-media-links'>
             <h4>Social Media Links</h4>
-            <li>
-              <img src={instaLogo}></img>
-            </li>
-            <li>
-              <img src={twitterLogo}></img>
-            </li>
-            <li>
-              <img src={faceLogo}></img>
-            </li>
-          </ul>
+            <ul className='social-links'>
+              <li>
+                <a href='https://www.instagram.com/' target='blank'>
+                  <img src={instaLogo} alt='instragram icon'></img>
+                </a>
+              </li>
+              <li>
+                <a href='https://www.twitter.com/' target='blank'>
+                  <img src={twitterLogo} alt='twitte icon'></img>
+                </a>
+              </li>
+              <li>
+                <a href='https://www.facebook.com/' target='blank'>
+                  <img src={faceLogo} alt='facebook icon'></img>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </>

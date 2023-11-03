@@ -1,12 +1,11 @@
 import React from 'react';
-import img1 from '../img/MarioandAdrianA.jpg';
 import './Chicago.css';
 export default function Chicago() {
   return (
     <div className='chicagobox'>
       <div className='lefttext'>
-        <h2>Little lemon</h2>
-        <h3>Chicago</h3>
+        <h1>Little lemon</h1>
+        <h2>Chicago</h2>
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
@@ -16,7 +15,11 @@ export default function Chicago() {
         </p>
       </div>
 
-      <img src={img1} className='chicagoImg' alt='chicago'></img>
+      <img
+        src='./img/mario-adrian-2-b.png'
+        className='chicagoImg'
+        alt='chicago'
+      ></img>
     </div>
   );
 }

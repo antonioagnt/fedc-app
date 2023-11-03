@@ -1,0 +1,36 @@
+.container-headder {
+  margin: 20px;
+
+  display: flex;
+}
+.container-headder a {
+  color: #495e57;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+}
+.container-headder a:hover {
+  color: white;
+  background-color: #495e57;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.container-headder a:active {
+  color: #495e57;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.nav-bar ul {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.nav-bar {
+  margin-left: 0;
+  margin-right: -15px;
+}
