@@ -1,13 +1,17 @@
 .chicagobox {
+  margin: 20px;
   display: flex;
-  background-color: gray;
+  justify-content: space-between;
 }
 
 .chicagoImg {
   display: flex;
-
 }
 
+.lefttext {
+  min-width: 200px;
+  width: 40%;
+}
 .lefttext > p {
   padding-top: 30px;
   margin-left: 3%;
@@ -22,5 +26,7 @@
   margin-left: 3%;
 }
 .chicagoImg {
-  width: 400px;
+  min-width: 250px;
+  max-width: 600px;
+  width: 40%;
 }

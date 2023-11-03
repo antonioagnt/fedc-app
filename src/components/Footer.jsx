@@ -5,10 +5,12 @@ import twitterLogo from '../img/twitter-x.svg';
 import faceLogo from '../img/facebook.svg';
 import Nav from './Nav';
 
+import './Footer.css';
+
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer className='footer'>
         <div>
           <img src={logo}></img>
         </div>

@@ -29,7 +29,7 @@ export default function Specials() {
   return (
     <div className='special-container'>
       <div className='special-header'>
-        <h3>Specials</h3>
+        <h1>Specials</h1>
         <button className='button button-specials'>Online Menu</button>
       </div>
 

@@ -5,8 +5,11 @@ export default function CallToAction() {
   return (
     <section className='call-to-Action'>
       <div className='call-left-box'>
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
+        <div className='header-text'>
+          <h1>Little Lemon</h1>
+          <h2>Chicago</h2>
+        </div>
+
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
@@ -16,7 +19,7 @@ export default function CallToAction() {
         </p>
         <button className='button-call button'>Book A table</button>
       </div>
-      <img alt='foto-call' src={headerImg}></img>
+      <img alt='foto-call' src={headerImg} className='foto-call'></img>
     </section>
   );
 }

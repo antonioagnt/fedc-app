@@ -32,7 +32,7 @@ const testimonialToRender = [
 export default function Testimonials() {
   return (
     <div className='testimonial-section'>
-      <h2>What our costumes says !</h2>
+      <h1>What our costumes says !</h1>
       <div className='testimonial-cards'>
         <TestimonialCard {...testimonialToRender[0]} />
         <TestimonialCard {...testimonialToRender[1]} />

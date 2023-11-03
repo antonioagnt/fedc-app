@@ -29,11 +29,12 @@ h1 {
   margin-left: 5%;
   margin-right: 5%;
   font-family: 'Markazi Text', serif;
-  font-style: normal;
+  font-weight: 400;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-left: 3%;
+  font-weight: 300;
 }
 h3 {
   font-family: 'Markazi Text', serif;
