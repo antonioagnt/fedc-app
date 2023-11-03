@@ -2,7 +2,6 @@
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  overflow: auto;
 }
 .special-card-holder {
   display: flex;
