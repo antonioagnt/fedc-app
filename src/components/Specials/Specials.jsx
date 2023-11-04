@@ -1,5 +1,5 @@
 import React from 'react';
-import SpecialCards from './SpecialCards';
+import SpecialCards from '../SpecialCards/SpecialCards';
 import './Specials.css';
 
 const foodsToRender = [

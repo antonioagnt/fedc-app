@@ -1,8 +1,5 @@
 import React from 'react';
-import instaLogo from '../img/instagram.svg';
-import twitterLogo from '../img/twitter-x.svg';
-import faceLogo from '../img/facebook.svg';
-import Nav from './Nav';
+import Nav from '../Nav/Nav';
 
 import './Footer.css';
 
@@ -36,17 +33,20 @@ export default function Footer() {
             <ul className='social-links'>
               <li>
                 <a href='https://www.instagram.com/' target='blank'>
-                  <img src={instaLogo} alt='instragram icon'></img>
+                  <img
+                    src='./img/icons/instagram.svg'
+                    alt='instragram icon'
+                  ></img>
                 </a>
               </li>
               <li>
                 <a href='https://www.twitter.com/' target='blank'>
-                  <img src={twitterLogo} alt='twitte icon'></img>
+                  <img src='./img/icons/twitter-x.svg' alt='twitte icon'></img>
                 </a>
               </li>
               <li>
                 <a href='https://www.facebook.com/' target='blank'>
-                  <img src={faceLogo} alt='facebook icon'></img>
+                  <img src='./img/icons/facebook.svg' alt='facebook icon'></img>
                 </a>
               </li>
             </ul>

@@ -1,9 +1,9 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Homepage from './components/Homepage';
-import Specials from './components/Specials';
+import Homepage from './components/Homepage/Homepage';
+import Specials from './components/Specials/Specials';
 import ConfirmationPage from './components/ConfirmationPage';
 import BookingPage from './components/BookingPage';
 
