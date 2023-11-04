@@ -7,15 +7,14 @@ import Specials from './components/Specials/Specials';
 import ConfirmationPage from './components/ConfirmationPage/ConfirmationPage';
 import BookingPage from './components/BookingPage/BookingPage';
 
-const updateDates = (state, action) => {
+const updateTimes = (state, action) => {
   switch (action.type) {
     case 'change_value':
       return {
         ...state,
-        selectedDate: action.payload,
+        selectedTime: action.payload,
       };
     case 'on_submit':
-      alert(`selected date: ${state.selectedDate}`);
       return state;
     default:
       return state;
@@ -31,10 +30,10 @@ function App() {
     dispatch({ type: 'on_submit' });
   };
   const initialState = {
-    selectedDate: '01/03/2023',
-    dateOptions: ['01/03/2023', '01/04/2023', '01/05/2023'],
+    selectedTime: '08:00',
+    timeOptions: ['08:00', '08:30', '09:00'],
   };
-  const [state, dispatch] = useReducer(updateDates, initialState);
+  const [state, dispatch] = useReducer(updateTimes, initialState);
 
   return (
     <>
@@ -46,15 +45,17 @@ function App() {
           path='/BookingPage'
           element={
             <BookingPage
-              selectedDate={state.selectedDate}
-              handleDateChange={handleSelectChange}
+              selectedTime={state.selectedTime}
+              handleTimeChange={handleSelectChange}
               handleSubmit={handleSubmitRedux}
-              dateOptions={state.dateOptions}
-              confirmedStatus={state.confirmed}
+              timeOptions={state.timeOptions}
             />
           }
         />
-        <Route path='/Confirmation' element={<ConfirmationPage />} />
+        <Route
+          path='/Confirmation'
+          element={<ConfirmationPage selectedTime={state.selectedTime} />}
+        />
       </Routes>
       <Footer />
     </>
