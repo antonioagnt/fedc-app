@@ -52,6 +52,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className='copyright'>
+          <p>&copy; 2023 Made for educational purpose by Antonio Neto</p>
+        </div>
       </footer>
     </>
   );

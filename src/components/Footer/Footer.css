@@ -62,3 +62,13 @@ li img:hover {
 .contact h4:first-child {
   margin-bottom: 10px;
 }
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  color: darkgray;
+  font-size: 0.8rem;
+  font-style: italic;
+}
