@@ -115,3 +115,6 @@ footer div {
 .button:active {
   background-color: #495e57;
 }
+section {
+  display: flex;
+}

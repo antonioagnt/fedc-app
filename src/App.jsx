@@ -4,8 +4,8 @@ import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './components/Homepage/Homepage';
 import Specials from './components/Specials/Specials';
-import ConfirmationPage from './components/ConfirmationPage';
-import BookingPage from './components/BookingPage';
+import ConfirmationPage from './components/ConfirmationPage/ConfirmationPage';
+import BookingPage from './components/BookingPage/BookingPage';
 
 const updateDates = (state, action) => {
   switch (action.type) {

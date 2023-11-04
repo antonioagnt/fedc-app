@@ -1,5 +1,6 @@
 import React from 'react';
 import './CallToAction.css';
+import { Link } from 'react-router-dom';
 export default function CallToAction() {
   return (
     <section className='call-to-Action'>
@@ -16,7 +17,9 @@ export default function CallToAction() {
           Hampden-Sydney College in Virginia, looked up one of the more obscure
           Latin words,
         </p>
-        <button className='button-call button'>Book A table</button>
+        <Link to='/BookingPage'>
+          <button className='button-call button'>Book A table</button>
+        </Link>
       </div>
       <img
         alt='foto-call'

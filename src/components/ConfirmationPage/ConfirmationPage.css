@@ -1,0 +1,17 @@
+.confirmation-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(240, 240, 240, 1);
+  text-align: center;
+}
+.confirmation-container img {
+  width: 200px;
+}
+.confirmation-container h2 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
