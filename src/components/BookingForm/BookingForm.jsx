@@ -37,9 +37,9 @@ function BookingForm(props) {
           </select>
           <label>Name</label>
           <input required type='text'></input>
-          <label>Email</label>
-          <input required type='email'></input>
-          <button type='submit' className='button-submit'>
+          <label htmlFor='email'>Email</label>
+          <input id='email' required type='email'></input>
+          <button type='submit' className='button-submit' aria-label='On Click'>
             Submit
           </button>
         </form>
